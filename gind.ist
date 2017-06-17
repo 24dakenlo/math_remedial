@@ -1,0 +1,10 @@
+preamble
+"\n \\begin{theindex} \n \\setlength{\\topmargin}{-10mm}\n"
+postamble
+"\n\n \\end{theindex}\n"
+item_x1 "\\hfill\\nopagebreak \n \\subitem "
+item_x2 "\\hfill\\nopagebreak \n \\subsubitem "
+delim_0 "\\,\\dotfill\\, "
+delim_1 "\\,\\dotfill\\, "
+delim_2 "\\,\\dotfill\\, "
+heading_flag 0

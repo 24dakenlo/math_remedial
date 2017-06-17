@@ -1,0 +1,114 @@
+\documentclass[twocolumn,9.5pt,fleqn,dvipdfmx]{jsbook}
+%\usepackage{amsmath,amsfonts,amssymb,mdwlist,graphics,makeidx,booktabs,colortbl,bm}
+\usepackage{amsmath,amsfonts,amssymb,mdwlist,graphics,makeidx,booktabs,bm}
+\usepackage[dvipdfmx]{colortbl}
+% ↓図の位置指定
+\usepackage{here}
+% emathWは多項式の割り算の筆算表記に必要。
+\usepackage{emathW}
+% emathEyは小問を横に並べるのに必要。
+\usepackage{emathEy}
+% emathWsは掛け算の筆算で必要。
+\usepackage{emathWs}
+%\usepackage[dvips]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{enumerate}
+\usepackage{ascmac}
+% multicolは索引頁の3段組の為。
+\usepackage{multicol}
+% ↓teiseiを使うのに必要
+\usepackage{emath,emathP,epic,eepic}
+% ↓コメントアウトを使う
+\usepackage{comment}
+\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{710pt}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{-0.7cm}
+\setcounter{tocdepth}{1}
+\makeindex
+
+
+
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\arabic{enumii}}
+\newcommand{\qed}{\hfill$\blacksquare$\par}
+\newcommand{\fref}[1]{図\ref{#1}}
+\newcommand{\tref}[1]{表\ref{#1}}
+\newcommand{\eref}[1]{式(\ref{#1})}
+\newcommand{\pref}[1]{P.\pageref{#1}}
+\newcommand{\peref}[1]{P.\pageref{#1}式(\ref{#1})}
+\newcommand{\kugirisen}{\noindent \rule{\columnwidth}{0.1mm}}
+\newcommand{\mv}{\vspace{0.2cm}}
+\newcommand{\hv}{\vspace{0.4cm}}
+\newcommand{\vv}{\vspace{0.6cm}}
+
+% 以下の2行はemathの変な式番号書式をもとに戻すために必要。
+\renewcommand{\tagform}[1]{(#1)}%
+\preEqlabel{}%
+
+\def\theenumii{\arabic{enumii}}
+\def\labelenumii{\tt (\theenumii)}
+\renewcommand{\labelenumi}{(\theenumi)}
+
+\newtheorem{exmpl}{例}[chapter]
+%\newtheorem{q}{\underline{問}}
+\newtheorem{q}{● 問}
+
+\newtheorem{exq}{演習}
+
+\newtheorem{faq}{{\small よくある質問}}
+
+\newtheorem{freqmiss}{\small よくある間違い}
+
+\DeclareMathOperator{\divg}{div}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\grad}{grad}
+%\DeclareMathOperator{\tr}{tr}
+
+
+\begin{document}
+\title {{\Huge 数学リメディアル教材}\\ }
+\author{{\Large 筑波大学生物資源学類}\\ }
+\date{{\Large 平成29年度}}
+\maketitle
+\newpage
+
+\frontmatter
+\include{00_intro}
+\tableofcontents
+\mainmatter
+\include{01_num}
+\include{01_num_ans}
+\include{02_unit}
+\include{02_unit_ans}
+\include{03_algebra}
+\include{03_algebra_ans}
+\include{04_function}
+\include{04_function_ans}
+\include{05_differential}
+%\include{05_differential_ans}
+\include{06_exponential}
+\include{06_exponential_ans}
+\include{07_trigonometry}
+\include{07_trigonometry_ans}
+\include{08_integral}
+\include{08_integral_ans}
+%\include{11_computer}
+%\include{11_computer_ans}
+\include{09_integ_app}
+\include{09_integ_app_ans}
+\include{10_calculus_app}
+\include{10_calculus_app_ans}
+\include{12_vector}
+\include{12_vector_ans}
+\include{13_matrix}
+\include{13_matrix_ans}
+\include{14_logic}
+\include{14_logic_ans}
+\include{15_stochastics}
+\include{15_stochastics_ans}
+\include{16_statistics}
+\include{16_statistics_ans}
+\include{17_symmetry_matrix}
+\printindex
+\end{document}
