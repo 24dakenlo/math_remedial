@@ -1,4 +1,6 @@
 # math_remedial
+本教材はその後, 何回か改訂され, 「ライブ講義　大学１年生のための数学入門」（講談社; 2019）として出版されましたので, GitHubでの今後の改訂は停止します。
+
 --------------------------------------------
 2012/12/28 Kenlo Nishida Nasahara nasahara.kenlo.gw@u.tsukuba.ac.jp
 
